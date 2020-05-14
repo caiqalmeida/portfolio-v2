@@ -6,6 +6,30 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    background-color: inherit;
+  }
+
+  body {
+    position: relative;
+    background-color: #171717;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #707070;
+  }
+
+  p, span, label {
+    color: #adadad;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    color: #5386E4;
+    text-decoration: none;
   }
 
   html, body, #root {
@@ -14,5 +38,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+    border: 0;
+
+    &:focus {
+      outline: 0;
+    }
   }
 `;
